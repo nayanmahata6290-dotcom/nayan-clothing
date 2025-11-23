@@ -1,0 +1,62 @@
+<header class="border-b bg-white">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+
+      <!-- Left: Logo -->
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-full bg-black text-white flex items-center justify-center text-lg font-semibold">
+          N
+        </div>
+        <span class="text-lg font-semibold tracking-wide">
+          Nayan Wear
+        </span>
+      </div>
+
+      <!-- Center: Desktop menu -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+        <a href="#" class="hover:text-black transition">New Arrivals</a>
+        <a href="#" class="hover:text-black transition">Men</a>
+        <a href="#" class="hover:text-black transition">Women</a>
+        <a href="#" class="hover:text-black transition">Collections</a>
+      </div>
+
+      <!-- Right: Icons -->
+      <div class="flex items-center gap-4">
+        <button class="hidden sm:inline-flex items-center gap-2 text-sm">
+          <span class="material-icons text-base">search</span>
+          <span class="hidden sm:inline">Search</span>
+        </button>
+
+        <!-- Cart -->
+        <button class="relative p-2 rounded-full border hover:bg-gray-50 transition" aria-label="Cart">
+          <span class="material-icons text-base">shopping_bag</span>
+          <span class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-black text-[10px] text-white flex items-center justify-center">
+            0
+          </span>
+        </button>
+
+        <!-- Mobile menu button -->
+        <button
+          type="button"
+          class="md:hidden inline-flex items-center justify-center p-2 rounded-md border hover:bg-gray-50"
+          (click)="toggleMobileMenu()"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-icons" *ngIf="!mobileOpen">menu</span>
+          <span class="material-icons" *ngIf="mobileOpen">close</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div *ngIf="mobileOpen" class="md:hidden pb-4">
+      <div class="flex flex-col gap-2 text-sm font-medium text-gray-700">
+        <a href="#" class="py-2 border-b">New Arrivals</a>
+        <a href="#" class="py-2 border-b">Men</a>
+        <a href="#" class="py-2 border-b">Women</a>
+        <a href="#" class="py-2 border-b">Collections</a>
+      </div>
+    </div>
+
+  </nav>
+</header>
