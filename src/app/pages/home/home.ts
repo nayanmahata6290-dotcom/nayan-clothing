@@ -11,7 +11,7 @@ import { NgFor } from '@angular/common';
   templateUrl: './home.html',   // or './Home.html'
   styleUrls: ['./home.css'],       // or './Home.css'
 })
-export class HomeComponent {
+export class Home {
 
   products = [
     {
