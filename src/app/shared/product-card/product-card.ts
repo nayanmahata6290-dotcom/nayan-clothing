@@ -4,6 +4,7 @@ import { NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { CartService } from '../services/cart';
 
+
 @Component({
   selector: 'app-product-card',
   standalone: true,

@@ -22,8 +22,10 @@ export class ProductDetail {
     const id = this.route.snapshot.paramMap.get('id');
 
     const items = [
-      { id: '1', title: 'Midnight Black Oversized Tee', category: 'Oversized Tee', price: 799, sizes: ['S','M','L'], image: 'https://images.pexels.com/photos/6311395/pexels-photo-6311395.jpeg', description: 'Premium quality oversized tee.' },
-      { id: '2', title: 'Storm Grey Hoodie', category: 'Hoodie', price: 1499, sizes: ['M','L','XL'], image: 'https://images.pexels.com/photos/7679726/pexels-photo-7679726.jpeg', description: 'Warm fleece hoodie.' }
+      { id: '1', title: 'Oversized T-shirt', category: 'Oversized T-shirt', price: 399, sizes: ['S','M','L'], image: 'assets/images/t-shirt1.jpg', description: 'Premium quality oversized t-shirt' },
+      { id: '2', title: 'Oversized T-shirt', category: 'Oversized T-shirt', price: 399, sizes: ['M','L','XL'], image: 'assets/images/t-shirt2.jpg', description: 'oversized cool t-shirt' },
+      {id: '3', title: 'Oversized T-shirt', category: 'Oversized T-shirt', price: 399, sizes: ['S','M','L'], image: 'assets/images/t-shirt3.jpg', description: 'Another oversized t-shirt' },
+      {id: '4', title: 'Oversized T-shirt', category: 'Oversized T-shirt', price: 399, sizes: ['S','M','L'], image: 'assets/images/t-shirt4.jpg', description: 'Yet another oversized t-shirt' }
     ];
 
     this.product = items.find(x => x.id === id) ?? items[0];
